@@ -53,8 +53,8 @@ async function deleteCustomer(req, res) {
   try {
     const customer = await Customer.findByPk(id);
 
-    if (car) {
-      await car.destroy();
+    if (customer) {
+      await customer.destroy();
 
       res.status(200).json({
         status: "200",
